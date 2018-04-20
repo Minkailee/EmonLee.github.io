@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next muse use-motion" lang="zh-CN">
+<html class="theme-next mist use-motion" lang="zh-CN">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="test," />
 
 
 
@@ -81,17 +81,18 @@
 
 
 
-<meta name="description" content="文章的编辑过程在本地使用 hexo new post “article title” 命令会在博客目录的 source/_posts 下生成一个 article-title.md 的文件，用编辑器打开就可以编辑文章了。文章编辑好之后，运行生成、部署命令。">
+<meta name="description" content="hexo发文流程及摘要设置">
+<meta name="keywords" content="test">
 <meta property="og:type" content="article">
-<meta property="og:title" content="My first post for testing">
+<meta property="og:title" content="Beginning of all!">
 <meta property="og:url" content="https://minkailee.github.io/EmonLee.github.io/2018/04/20/My-first-post-for-testing/index.html">
 <meta property="og:site_name" content="Emon&#39;s Blog">
-<meta property="og:description" content="文章的编辑过程在本地使用 hexo new post “article title” 命令会在博客目录的 source/_posts 下生成一个 article-title.md 的文件，用编辑器打开就可以编辑文章了。文章编辑好之后，运行生成、部署命令。">
+<meta property="og:description" content="hexo发文流程及摘要设置">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-04-20T12:32:56.259Z">
+<meta property="og:updated_time" content="2018-04-20T13:41:28.853Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="My first post for testing">
-<meta name="twitter:description" content="文章的编辑过程在本地使用 hexo new post “article title” 命令会在博客目录的 source/_posts 下生成一个 article-title.md 的文件，用编辑器打开就可以编辑文章了。文章编辑好之后，运行生成、部署命令。">
+<meta name="twitter:title" content="Beginning of all!">
+<meta name="twitter:description" content="hexo发文流程及摘要设置">
 
 
 
@@ -99,7 +100,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Muse',
+    scheme: 'Mist',
     version: '5.1.4',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
@@ -127,7 +128,7 @@
 
 
 
-  <title>My first post for testing | Emon's Blog</title>
+  <title>Beginning of all! | Emon's Blog</title>
   
 
 
@@ -281,7 +282,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">My first post for testing</h1>
+          <h1 class="post-title" itemprop="name headline">Beginning of all!</h1>
         
 
         <div class="post-meta">
@@ -304,6 +305,28 @@
           </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Hexo-Blog-Next/" itemprop="url" rel="index">
+                    <span itemprop="name">Hexo Blog Next</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -316,6 +339,10 @@
 
           
 
+          
+              <div class="post-description">
+                  hexo发文流程及摘要设置
+              </div>
           
 
         </div>
@@ -331,7 +358,11 @@
       
 
       
-        <p>文章的编辑过程在本地<br>使用 hexo new post “article title” 命令会在博客目录的 source/_posts 下生成一个 article-title.md 的文件，用编辑器打开就可以编辑文章了。文章编辑好之后，运行生成、部署命令。</p>
+        <h1 id="文章的编辑过程在本地"><a href="#文章的编辑过程在本地" class="headerlink" title="文章的编辑过程在本地"></a>文章的编辑过程在本地</h1><p>使用 hexo new post “article title” 命令会在博客目录的 source/_posts 下生成一个 article-title.md 的文件，用编辑器打开就可以编辑文章了。文章编辑好之后，运行生成、部署命令。</p>
+<h1 id="主页显示文章摘要"><a href="#主页显示文章摘要" class="headerlink" title="主页显示文章摘要"></a>主页显示文章摘要</h1><p>默认情况下在主页是把文章内容全部显示出来的，如果在根目录的_config.yml中配置分页:</p>
+<p>per_page: 10<br>那么每页显示10篇文章，这样的花主页就看起来不是很精简了，可以通过下面的方法来配置主页只显示文章摘要：<br>在themes/next/的_config.yml中配置：</p>
+<p> Automatically Excerpt. Not recommand.<br> Please use <a id="more"></a> in the post to control excerpt accurately.<br>auto_excerpt:<br>  enable: false<br>  length: 150</p>
+<p>把enable项配置为true就可以了。<br>但是我们也可以看到注释中是不推荐这样做的，因为这样会强制把文章前150个字符做为摘要的，会出现描述不完整的情况，而且有时候会把文章的源码显示出来。<br>那么我们就用推荐的在文章中用<!-- more -->这种方式来作为文章摘要的方式，可以根据每篇文章的不同情况自己来把控摘要的内容。<br>或者是在文章中配置description也是可以的。</p>
 
       
     </div>
@@ -346,6 +377,12 @@
     
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/test/" rel="tag"># test</a>
+          
+        </div>
       
 
       
@@ -400,8 +437,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -423,7 +469,25 @@
             
 
             
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">categories</span>
+                </a>
+              </div>
+            
 
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
             
 
           </nav>
@@ -450,6 +514,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#文章的编辑过程在本地"><span class="nav-number">1.</span> <span class="nav-text">文章的编辑过程在本地</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#主页显示文章摘要"><span class="nav-number">2.</span> <span class="nav-text">主页显示文章摘要</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -482,7 +562,7 @@
 
 
 
-  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.4</div>
 
 
 
@@ -529,6 +609,8 @@
   
 
 
+  
+
 
 
 
@@ -567,6 +649,11 @@
   
   
     <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
   
 
 
