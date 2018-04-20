@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://minkailee.github.io/EmonLee.github.io/"/>
-  <updated>2018-04-20T06:27:40.635Z</updated>
+  <updated>2018-04-20T12:14:04.852Z</updated>
   <id>https://minkailee.github.io/EmonLee.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>My first post for testing</title>
+    <link href="https://minkailee.github.io/EmonLee.github.io/2018/04/20/My-first-post-for-testing/"/>
+    <id>https://minkailee.github.io/EmonLee.github.io/2018/04/20/My-first-post-for-testing/</id>
+    <published>2018-04-20T11:49:18.000Z</published>
+    <updated>2018-04-20T12:14:04.852Z</updated>
+    
+    <content type="html"><![CDATA[<p>���µı༭�����ڱ���<br>ʹ�� hexo new post “article title” ������ڲ���Ŀ¼�� source/_posts ������һ�� article-title.md ���ļ����ñ༭���򿪾Ϳ��Ա༭�����ˡ����±༭��֮���������ɡ��������</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;���µı༭�����ڱ���&lt;br&gt;ʹ�� hexo new post “article title” ������ڲ���Ŀ¼�� source/_posts ������һ�� article-title.md ���ļ����ñ༭���򿪾Ϳ��Ա༭�����ˡ��
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
