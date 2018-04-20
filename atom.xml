@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://minkailee.github.io/EmonLee.github.io/"/>
-  <updated>2018-04-20T12:14:04.852Z</updated>
+  <updated>2018-04-20T12:22:05.385Z</updated>
   <id>https://minkailee.github.io/EmonLee.github.io/</id>
   
   <author>
@@ -21,15 +21,16 @@
     <link href="https://minkailee.github.io/EmonLee.github.io/2018/04/20/My-first-post-for-testing/"/>
     <id>https://minkailee.github.io/EmonLee.github.io/2018/04/20/My-first-post-for-testing/</id>
     <published>2018-04-20T11:49:18.000Z</published>
-    <updated>2018-04-20T12:14:04.852Z</updated>
+    <updated>2018-04-20T12:22:05.385Z</updated>
     
-    <content type="html"><![CDATA[<p>���µı༭�����ڱ���<br>ʹ�� hexo new post “article title” ������ڲ���Ŀ¼�� source/_posts ������һ�� article-title.md ���ļ����ñ༭���򿪾Ϳ��Ա༭�����ˡ����±༭��֮���������ɡ��������</p>]]></content>
+    <content type="html"><![CDATA[<p>文章的编辑过程在本地<br>使用 hexo new post “article title” 命令会在博客目录的 source/_posts 下生成一个 article-title.md 的文件，用编辑器打开就可以编辑文章了。文章编辑好之后，运行生成、部署命令。</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;���µı༭�����ڱ���&lt;br&gt;ʹ�� hexo new post “article title” ������ڲ���Ŀ¼�� source/_posts ������һ�� article-title.md ���ļ����ñ༭���򿪾Ϳ��Ա༭�����ˡ��
+        &lt;p&gt;文章的编辑过程在本地&lt;br&gt;使用 hexo new post “article title” 命令会在博客目录的 source/_posts 下生成一个 article-title.md 的文件，用编辑器打开就可以编辑文章了。文章编辑好之后，运行生成、部署命令。&lt;/p&gt;
+
       
     
     </summary>
